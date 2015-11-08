@@ -1,0 +1,9 @@
+## Plot 2  -Time Series
+
+plot2 <- function() {
+        plot(dframe$timestamp,dframe$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+        dev.copy(png, file="plot2.png", width=480, height=480)
+        dev.off()
+        cat("plot2-Time Series by Sun metering.png has been saved in", getwd())
+}
+plot2()
